@@ -1,5 +1,7 @@
 document.getElementById('year').textContent = new Date().getFullYear();
-
+// Smooth focus after skip link
+const skip = document.querySelector('.skip-link');
+if (skip) { skip.addEventListener('click', ()=> document.getElementById('main')?.focus()); }
 // GA4 outbound project click tracking
 document.addEventListener('click', function(e){
   const a = e.target.closest('a.btn.sm[href^="https://github.com/"]');
@@ -13,4 +15,3 @@ document.addEventListener('click', function(e){
     });
   }
 });
-

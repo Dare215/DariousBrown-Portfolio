@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dare215.github.io/DariousBrown-Portfolio/sitemap.xml
