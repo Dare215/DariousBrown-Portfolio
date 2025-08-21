@@ -4,19 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Darious Brown's Portfolio</title>
-  <meta name="description" content="Aggressive, eye‑catching, tech‑innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration." />
+  <meta name="description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration." />
   <meta name="keywords" content="Darious Brown, Data Science, Portfolio, Machine Learning, AI, Python, R, Streamlit, SHAP, Forecasting, EDA, GitHub Pages">
   <link rel="canonical" href="https://dare215.github.io/DariousBrown-Portfolio/">
   <meta name="theme-color" content="#0a0b10">
   <meta name="color-scheme" content="dark light">
   <meta property="og:title" content="Darious Brown's Portfolio">
-  <meta property="og:description" content="Aggressive, eye‑catching, tech‑innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
+  <meta property="og:description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/social-preview.png">
   <meta property="og:url" content="https://dare215.github.io/DariousBrown-Portfolio/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Darious Brown's Portfolio">
-  <meta name="twitter:description" content="Aggressive, eye‑catching, tech‑innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
+  <meta name="twitter:description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
   <meta name="twitter:image" content="assets/social-preview.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="manifest" href="site.webmanifest">
@@ -24,14 +24,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Tech-theme button styles (move to style.css later if you like) -->
+  <style>
+    .btn {
+      display:inline-block; padding:12px 20px; border-radius:10px;
+      text-decoration:none; font-weight:700; letter-spacing:.2px;
+      background:linear-gradient(90deg,#007cf0,#00dfd8);
+      color:#fff; box-shadow:0 8px 20px rgba(0,0,0,.25);
+      transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+    }
+    .btn:hover { transform:translateY(-2px); box-shadow:0 12px 26px rgba(0,0,0,.3); filter:saturate(1.1); }
+    .btn.primary { background:linear-gradient(90deg,#8a2be2,#00b4d8); }
+    .cta-row .btn { margin-right:10px; }
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X837N2JGCW"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-X837N2JGCW');</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Darious Brown", "jobTitle": "Data Scientist", "url": "https://dare215.github.io/DariousBrown-Portfolio/", "email": "mailto:dariousbrown3@icloud.com", "sameAs": ["https://www.linkedin.com/in/dariousbrown", "https://github.com/Dare215"]}</script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-X837N2JGCW');</script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Darious Brown","jobTitle":"Data Scientist","url":"https://dare215.github.io/DariousBrown-Portfolio/","email":"mailto:dariousbrown3@icloud.com","sameAs":["https://www.linkedin.com/in/dariousbrown","https://github.com/Dare215"]}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="glow-bg" aria-hidden="true"></div>
+
   <header class="nav glass" role="banner">
     <a href="#top" class="brand" aria-label="Home">Darious Brown's Portfolio</a>
     <nav aria-label="Primary">
@@ -50,7 +67,8 @@
         <div class="cta-row">
           <a class="btn primary" href="#projects">Explore My Work</a>
           <a class="btn" href="https://www.linkedin.com/in/dariousbrown" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="assets/resume/Resume_APR2025.docx" download>Download Résumé</a>
+          <!-- UPDATED: resume link now points to the PDF -->
+          <a class="btn" href="assets/resume/DariousResume2025.pdf" download>Download Résumé</a>
         </div>
       </div>
       <div class="hero-media">
@@ -65,13 +83,14 @@
       </div>
 
       <div class="grid">
+        <!-- (cards unchanged) -->
         <article class="card"><img class="thumb" src="assets/project-thumbs/BitcoinPriceTracker.png" alt="Bitcoin Price Tracker thumbnail" loading="lazy"><div class="card-head"><h3>Bitcoin Price Tracker & EDA</h3><span class="tag">Python • EDA</span></div><p>Volatility analysis with distribution fits, volume–cap correlations, and daily price-change insights.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/BitcoinPriceTracker" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/DebtRiskIQ.png" alt="DebtRiskIQ thumbnail" loading="lazy"><div class="card-head"><h3>DebtRiskIQ — Loan Default Prediction</h3><span class="tag">ML • Streamlit</span></div><p>Logistic Regression & Random Forest with SHAP interpretability and a Streamlit prediction UI.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/DebtRiskIQ" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/MissionToMars-AIAnalytics.png" alt="Mission to Mars thumbnail" loading="lazy"><div class="card-head"><h3>MissionToMars — AI Analytics</h3><span class="tag">EDA • Forecasting</span></div><p>Global exploration trends, budgets, success rates, and Mars readiness comparisons by country.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/MissionToMars-AIAnalytics" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/CapitalTrafficFlow.png" alt="CapitalTrafficFlow thumbnail" loading="lazy"><div class="card-head"><h3>CapitalTrafficFlow</h3><span class="tag">Viz • Time Series</span></div><p>White House access analysis (WAVES) revealing peak months/hours and staffing implications.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/CapitalTrafficFlow" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/HallucinationApp.png" alt="HallucinationApp thumbnail" loading="lazy"><div class="card-head"><h3>HallucinationApp</h3><span class="tag">LLM • Streamlit</span></div><p>Fine-tuned GPT assistant detecting & correcting AI hallucinations with confidence scoring.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/HallucinationApp" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/JackpotAnalytics.png" alt="JackpotAnalytics thumbnail" loading="lazy"><div class="card-head"><h3>JackpotAnalytics</h3><span class="tag">EDA • Probability</span></div><p>Frequency and randomness study of Powerball, Mega Millions, and Pick10.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/JackpotAnalytics" target="_blank" rel="noopener">View on GitHub</a></div></article>
-        <article class="card"><img class="thumb" src="assets/project-thumbs/NetflixTrendsandAnalysis.png" alt="Netflix Trends thumbnail" loading="lazy"><div class="card-head"><h3>Netflix Trends & Analysis</h3><span class="tag">Analytics</span></div><p>Top 10 engagement patterns, the first‑91‑days effect, and runtime trends across formats.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/NetflixTrendsandAnalysis" target="_blank" rel="noopener">View on GitHub</a></div></article>
+        <article class="card"><img class="thumb" src="assets/project-thumbs/NetflixTrendsandAnalysis.png" alt="Netflix Trends thumbnail" loading="lazy"><div class="card-head"><h3>Netflix Trends & Analysis</h3><span class="tag">Analytics</span></div><p>Top 10 engagement patterns, the first-91-days effect, and runtime trends across formats.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/NetflixTrendsandAnalysis" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/PregnancyTrends2002-DataScience.png" alt="Pregnancy Trends thumbnail" loading="lazy"><div class="card-head"><h3>Pregnancy Trends 2002</h3><span class="tag">Public Health</span></div><p>NSFG-based outcomes and demographics analysis with ethical framing.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/PregnancyTrends2002-DataScience" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/TheCostOfCare.png" alt="The Cost of Care thumbnail" loading="lazy"><div class="card-head"><h3>The Cost of Care</h3><span class="tag">Healthcare • Policy</span></div><p>Medicare Part D pricing disparities: brand vs generic with policy recommendations.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/TheCostOfCare" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/Racial-Disparities-in-Arrests-United-States-2020-data.png" alt="Arrests 2020 thumbnail" loading="lazy"><div class="card-head"><h3>Racial Disparities in Arrests — 2020</h3><span class="tag">Civic Data</span></div><p>OJJDP arrest data analysis, stereotype testing, and SARIMA projections.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Racial-Disparities-in-Arrests-United-States-2020-data" target="_blank" rel="noopener">View on GitHub</a></div></article>
@@ -80,9 +99,9 @@
 
     <section id="about" class="section about" aria-labelledby="about-title">
       <h2 id="about-title" class="headline">About Me</h2>
-      <p>I’m Darious Brown, a data scientist focused on building high‑impact machine learning systems and ethical, compelling data stories. My work spans finance risk modeling, healthcare analytics, civic data, and space exploration forecasting.</p>
+      <p>I’m Darious Brown, a data scientist focused on building high-impact machine learning systems and ethical, compelling data stories. My work spans finance risk modeling, healthcare analytics, civic data, and space exploration forecasting.</p>
       <ul class="skills">
-        <li>Python • R • SQL</li><li>Scikit‑learn • PyTorch • SHAP</li><li>EDA • Forecasting • MLOps</li><li>Streamlit • Plotly • Power BI</li>
+        <li>Python • R • SQL</li><li>Scikit-learn • PyTorch • SHAP</li><li>EDA • Forecasting • MLOps</li><li>Streamlit • Plotly • Power BI</li>
       </ul>
     </section>
 
