@@ -56,7 +56,7 @@
     .cta-row .btn { margin-right:10px; }
     .btn.sm { padding:8px 14px; font-weight:600; }
 
-    /* --- Project title sizing (below images) --- */
+    /* Project title sizing (below images) */
     .card-head h3{
       font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
       line-height: 1.2;
@@ -66,7 +66,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 2; /* two lines */
       -webkit-box-orient: vertical;
     }
     .card .tag{ font-size:.8rem; }
@@ -74,18 +74,14 @@
       .card-head h3{ font-size: 1.05rem; }
     }
 
-    /* --- Ensure full thumbnail text fits (letterboxed if needed) --- */
+    /* Thumbnails: CROPPED like before */
     .card .thumb{
       width: 100%;
-      aspect-ratio: 16 / 9;        /* consistent card height */
-      object-fit: contain;          /* show entire image, no cropping */
+      aspect-ratio: 16 / 9;     /* consistent card height */
+      object-fit: cover;        /* crop to fill, like before */
       object-position: center;
-      background: #0b0d12;          /* subtle letterbox color */
       border-radius: 16px;
       display: block;
-    }
-    @media (max-width: 640px){
-      .card .thumb{ aspect-ratio: 4 / 3; } /* a bit taller on phones */
     }
   </style>
 
@@ -197,6 +193,4 @@
   <script src="js/main.js" defer></script>
 </body>
 </html>
-
-
 
