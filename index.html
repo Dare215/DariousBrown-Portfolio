@@ -1,25 +1,43 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Darious Brown's Portfolio</title>
+
+  <!-- Core SEO -->
   <meta name="description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration." />
   <meta name="keywords" content="Darious Brown, Data Science, Portfolio, Machine Learning, AI, Python, R, Streamlit, SHAP, Forecasting, EDA, GitHub Pages">
   <link rel="canonical" href="https://dare215.github.io/DariousBrown-Portfolio/">
   <meta name="theme-color" content="#0a0b10">
   <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="sitemap" type="application/xml" href="https://dare215.github.io/DariousBrown-Portfolio/sitemap.xml">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Darious Brown — Portfolio">
   <meta property="og:title" content="Darious Brown's Portfolio">
   <meta property="og:description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/social-preview.png">
   <meta property="og:url" content="https://dare215.github.io/DariousBrown-Portfolio/">
+  <meta property="og:image" content="https://dare215.github.io/DariousBrown-Portfolio/assets/social-preview.png">
+  <meta property="og:image:alt" content="Darious Brown — AI & Data Science Portfolio preview">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Darious Brown's Portfolio">
   <meta name="twitter:description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
-  <meta name="twitter:image" content="assets/social-preview.png">
+  <meta name="twitter:image" content="https://dare215.github.io/DariousBrown-Portfolio/assets/social-preview.png">
+  <meta name="twitter:image:alt" content="Darious Brown — AI & Data Science Portfolio preview">
+
+  <!-- Icons & PWA -->
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -37,13 +55,38 @@
     .btn:hover { transform:translateY(-2px); box-shadow:0 12px 26px rgba(0,0,0,.3); filter:saturate(1.1); }
     .btn.primary { background:linear-gradient(90deg,#8a2be2,#00b4d8); }
     .cta-row .btn { margin-right:10px; }
+    .btn.sm { padding:8px 14px; font-weight:600; }
   </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X837N2JGCW"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-X837N2JGCW');</script>
+  <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());
+    gtag('config','G-X837N2JGCW');
+  </script>
 
+  <!-- Structured data: Person (kept) -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Darious Brown","jobTitle":"Data Scientist","url":"https://dare215.github.io/DariousBrown-Portfolio/","email":"mailto:dariousbrown3@icloud.com","sameAs":["https://www.linkedin.com/in/dariousbrown","https://github.com/Dare215"]}</script>
+
+  <!-- Structured data: WebSite (added) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Darious Brown's Portfolio",
+    "url": "https://dare215.github.io/DariousBrown-Portfolio/",
+    "publisher": {
+      "@type": "Person",
+      "name": "Darious Brown",
+      "sameAs": [
+        "https://www.linkedin.com/in/dariousbrown",
+        "https://github.com/Dare215"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -68,7 +111,7 @@
           <a class="btn primary" href="#projects">Explore My Work</a>
           <a class="btn" href="https://www.linkedin.com/in/dariousbrown" target="_blank" rel="noopener">LinkedIn</a>
           <!-- FIXED Résumé button -->
-          <a class="btn" href="assets/resume/DariousResume2025.pdf" target="_blank" rel="noopener">Download Résumé</a>
+          <a class="btn" href="assets/resume/DariousResume2025.pdf" target="_blank" rel="noopener" aria-label="Download résumé PDF (opens in new tab)" type="application/pdf">Download Résumé</a>
         </div>
       </div>
       <div class="hero-media">
@@ -123,4 +166,6 @@
   <script src="js/main.js" defer></script>
 </body>
 </html>
+```
+
 
