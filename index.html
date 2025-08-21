@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +14,10 @@
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="sitemap" type="application/xml" href="https://dare215.github.io/DariousBrown-Portfolio/sitemap.xml">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Social -->
   <meta property="og:site_name" content="Darious Brown — Portfolio">
   <meta property="og:title" content="Darious Brown's Portfolio">
-  <meta property="og:description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
+  <meta property="og:description" content="Aggressive, eye-catching, tech-innovative portfolio — AI & Data Science across ML, healthcare, finance, civic data, and space exploration.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dare215.github.io/DariousBrown-Portfolio/">
   <meta property="og:image" content="https://dare215.github.io/DariousBrown-Portfolio/assets/social-preview.png">
@@ -29,7 +28,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Darious Brown's Portfolio">
-  <meta name="twitter:description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration.">
+  <meta name="twitter:description" content="Aggressive, eye-catching, tech-innovative portfolio — AI & Data Science across ML, healthcare, finance, civic data, and space exploration.">
   <meta name="twitter:image" content="https://dare215.github.io/DariousBrown-Portfolio/assets/social-preview.png">
   <meta name="twitter:image:alt" content="Darious Brown — AI & Data Science Portfolio preview">
 
@@ -43,7 +42,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Tech-theme button styles (move to style.css later if you like) -->
+  <!-- Inline tweaks (consider moving to style.css) -->
   <style>
     .btn {
       display:inline-block; padding:12px 20px; border-radius:10px;
@@ -56,6 +55,24 @@
     .btn.primary { background:linear-gradient(90deg,#8a2be2,#00b4d8); }
     .cta-row .btn { margin-right:10px; }
     .btn.sm { padding:8px 14px; font-weight:600; }
+
+    /* ----- Project title sizing fix ----- */
+    .card-head h3{
+      font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+      line-height: 1.2;
+      margin: 0 0 6px;
+      word-break: break-word;
+      hyphens: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;   /* keep to two lines */
+      -webkit-box-orient: vertical;
+    }
+    .card .tag{ font-size:.8rem; }
+    @media (max-width: 768px){
+      .card-head h3{ font-size: 1.05rem; }
+    }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -67,10 +84,10 @@
     gtag('config','G-X837N2JGCW');
   </script>
 
-  <!-- Structured data: Person (kept) -->
+  <!-- Structured data: Person -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Darious Brown","jobTitle":"Data Scientist","url":"https://dare215.github.io/DariousBrown-Portfolio/","email":"mailto:dariousbrown3@icloud.com","sameAs":["https://www.linkedin.com/in/dariousbrown","https://github.com/Dare215"]}</script>
 
-  <!-- Structured data: WebSite (added) -->
+  <!-- Structured data: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,7 +127,7 @@
         <div class="cta-row">
           <a class="btn primary" href="#projects">Explore My Work</a>
           <a class="btn" href="https://www.linkedin.com/in/dariousbrown" target="_blank" rel="noopener">LinkedIn</a>
-          <!-- FIXED Résumé button -->
+          <!-- Résumé button -->
           <a class="btn" href="assets/resume/DariousResume2025.pdf" target="_blank" rel="noopener" aria-label="Download résumé PDF (opens in new tab)" type="application/pdf">Download Résumé</a>
         </div>
       </div>
@@ -126,7 +143,7 @@
       </div>
 
       <div class="grid">
-        <!-- (cards unchanged) -->
+        <!-- (cards) -->
         <article class="card"><img class="thumb" src="assets/project-thumbs/BitcoinPriceTracker.png" alt="Bitcoin Price Tracker thumbnail" loading="lazy"><div class="card-head"><h3>Bitcoin Price Tracker & EDA</h3><span class="tag">Python • EDA</span></div><p>Volatility analysis with distribution fits, volume–cap correlations, and daily price-change insights.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/BitcoinPriceTracker" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/DebtRiskIQ.png" alt="DebtRiskIQ thumbnail" loading="lazy"><div class="card-head"><h3>DebtRiskIQ — Loan Default Prediction</h3><span class="tag">ML • Streamlit</span></div><p>Logistic Regression & Random Forest with SHAP interpretability and a Streamlit prediction UI.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/DebtRiskIQ" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/MissionToMars-AIAnalytics.png" alt="Mission to Mars thumbnail" loading="lazy"><div class="card-head"><h3>MissionToMars — AI Analytics</h3><span class="tag">EDA • Forecasting</span></div><p>Global exploration trends, budgets, success rates, and Mars readiness comparisons by country.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/MissionToMars-AIAnalytics" target="_blank" rel="noopener">View on GitHub</a></div></article>
@@ -166,6 +183,6 @@
   <script src="js/main.js" defer></script>
 </body>
 </html>
-```
+
 
 
