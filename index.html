@@ -56,7 +56,7 @@
     .cta-row .btn { margin-right:10px; }
     .btn.sm { padding:8px 14px; font-weight:600; }
 
-    /* ----- Project title sizing fix ----- */
+    /* --- Project title sizing (below images) --- */
     .card-head h3{
       font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
       line-height: 1.2;
@@ -66,12 +66,26 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 2;   /* keep to two lines */
+      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
     .card .tag{ font-size:.8rem; }
     @media (max-width: 768px){
       .card-head h3{ font-size: 1.05rem; }
+    }
+
+    /* --- Ensure full thumbnail text fits (letterboxed if needed) --- */
+    .card .thumb{
+      width: 100%;
+      aspect-ratio: 16 / 9;        /* consistent card height */
+      object-fit: contain;          /* show entire image, no cropping */
+      object-position: center;
+      background: #0b0d12;          /* subtle letterbox color */
+      border-radius: 16px;
+      display: block;
+    }
+    @media (max-width: 640px){
+      .card .thumb{ aspect-ratio: 4 / 3; } /* a bit taller on phones */
     }
   </style>
 
@@ -143,7 +157,7 @@
       </div>
 
       <div class="grid">
-        <!-- (cards) -->
+        <!-- (cards unchanged) -->
         <article class="card"><img class="thumb" src="assets/project-thumbs/BitcoinPriceTracker.png" alt="Bitcoin Price Tracker thumbnail" loading="lazy"><div class="card-head"><h3>Bitcoin Price Tracker & EDA</h3><span class="tag">Python • EDA</span></div><p>Volatility analysis with distribution fits, volume–cap correlations, and daily price-change insights.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/BitcoinPriceTracker" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/DebtRiskIQ.png" alt="DebtRiskIQ thumbnail" loading="lazy"><div class="card-head"><h3>DebtRiskIQ — Loan Default Prediction</h3><span class="tag">ML • Streamlit</span></div><p>Logistic Regression & Random Forest with SHAP interpretability and a Streamlit prediction UI.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/DebtRiskIQ" target="_blank" rel="noopener">View on GitHub</a></div></article>
         <article class="card"><img class="thumb" src="assets/project-thumbs/MissionToMars-AIAnalytics.png" alt="Mission to Mars thumbnail" loading="lazy"><div class="card-head"><h3>MissionToMars — AI Analytics</h3><span class="tag">EDA • Forecasting</span></div><p>Global exploration trends, budgets, success rates, and Mars readiness comparisons by country.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/MissionToMars-AIAnalytics" target="_blank" rel="noopener">View on GitHub</a></div></article>
