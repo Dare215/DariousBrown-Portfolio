@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Darious Brown's Portfolio</title>
 
-  <!-- Core SEO -->
   <meta name="description" content="Aggressive, eye-catching, tech-innovative portfolio by Darious Brown — AI & Data Science projects across ML, healthcare, finance, civic data, and space exploration." />
   <meta name="keywords" content="Darious Brown, Data Science, Portfolio, Machine Learning, AI, Python, R, Streamlit, SHAP, Forecasting, EDA, GitHub Pages">
   <link rel="canonical" href="https://dare215.github.io/DariousBrown-Portfolio/">
@@ -14,7 +14,6 @@
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="sitemap" type="application/xml" href="https://dare215.github.io/DariousBrown-Portfolio/sitemap.xml">
 
-  <!-- Open Graph / Social -->
   <meta property="og:site_name" content="Darious Brown — Portfolio">
   <meta property="og:title" content="Darious Brown's Portfolio">
   <meta property="og:description" content="Aggressive, eye-catching, tech-innovative portfolio — AI & Data Science across ML, healthcare, finance, civic data, and space exploration.">
@@ -25,24 +24,20 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Darious Brown's Portfolio">
   <meta name="twitter:description" content="Aggressive, eye-catching, tech-innovative portfolio — AI & Data Science across ML, healthcare, finance, civic data, and space exploration.">
   <meta name="twitter:image" content="https://dare215.github.io/DariousBrown-Portfolio/assets/social-preview.png">
   <meta name="twitter:image:alt" content="Darious Brown — AI & Data Science Portfolio preview">
 
-  <!-- Icons & PWA -->
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Inline tweaks (consider moving to style.css) -->
   <style>
     .btn {
       display:inline-block; padding:12px 20px; border-radius:10px;
@@ -56,7 +51,6 @@
     .cta-row .btn { margin-right:10px; }
     .btn.sm { padding:8px 14px; font-weight:600; }
 
-    /* Project title sizing (below images) */
     .card-head h3{
       font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
       line-height: 1.2;
@@ -66,7 +60,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 2; /* two lines */
+      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
     .card .tag{ font-size:.8rem; }
@@ -74,18 +68,16 @@
       .card-head h3{ font-size: 1.05rem; }
     }
 
-    /* Thumbnails: CROPPED like before */
     .card .thumb{
       width: 100%;
-      aspect-ratio: 16 / 9;     /* consistent card height */
-      object-fit: cover;        /* crop to fill, like before */
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
       object-position: center;
       border-radius: 16px;
       display: block;
     }
   </style>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X837N2JGCW"></script>
   <script>
     window.dataLayer=window.dataLayer||[];
@@ -94,10 +86,8 @@
     gtag('config','G-X837N2JGCW');
   </script>
 
-  <!-- Structured data: Person -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Darious Brown","jobTitle":"Data Scientist","url":"https://dare215.github.io/DariousBrown-Portfolio/","email":"mailto:dariousbrown3@icloud.com","sameAs":["https://www.linkedin.com/in/dariousbrown","https://github.com/Dare215"]}</script>
 
-  <!-- Structured data: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -115,6 +105,7 @@
   }
   </script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="glow-bg" aria-hidden="true"></div>
@@ -137,7 +128,6 @@
         <div class="cta-row">
           <a class="btn primary" href="#projects">Explore My Work</a>
           <a class="btn" href="https://www.linkedin.com/in/dariousbrown" target="_blank" rel="noopener">LinkedIn</a>
-          <!-- Résumé button -->
           <a class="btn" href="assets/resume/DariousResume2025.pdf" target="_blank" rel="noopener" aria-label="Download résumé PDF (opens in new tab)" type="application/pdf">Download Résumé</a>
         </div>
       </div>
@@ -153,17 +143,41 @@
       </div>
 
       <div class="grid">
-        <!-- (cards unchanged) -->
         <article class="card"><img class="thumb" src="assets/project-thumbs/BitcoinPriceTracker.png" alt="Bitcoin Price Tracker thumbnail" loading="lazy"><div class="card-head"><h3>Bitcoin Price Tracker & EDA</h3><span class="tag">Python • EDA</span></div><p>Volatility analysis with distribution fits, volume–cap correlations, and daily price-change insights.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/BitcoinPriceTracker" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/DebtRiskIQ.png" alt="DebtRiskIQ thumbnail" loading="lazy"><div class="card-head"><h3>DebtRiskIQ — Loan Default Prediction</h3><span class="tag">ML • Streamlit</span></div><p>Logistic Regression & Random Forest with SHAP interpretability and a Streamlit prediction UI.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/DebtRiskIQ" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/MissionToMars-AIAnalytics.png" alt="Mission to Mars thumbnail" loading="lazy"><div class="card-head"><h3>MissionToMars — AI Analytics</h3><span class="tag">EDA • Forecasting</span></div><p>Global exploration trends, budgets, success rates, and Mars readiness comparisons by country.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/MissionToMars-AIAnalytics" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/CapitalTrafficFlow.png" alt="CapitalTrafficFlow thumbnail" loading="lazy"><div class="card-head"><h3>CapitalTrafficFlow</h3><span class="tag">Viz • Time Series</span></div><p>White House access analysis (WAVES) revealing peak months/hours and staffing implications.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/CapitalTrafficFlow" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/HallucinationApp.png" alt="HallucinationApp thumbnail" loading="lazy"><div class="card-head"><h3>HallucinationApp</h3><span class="tag">LLM • Streamlit</span></div><p>Fine-tuned GPT assistant detecting & correcting AI hallucinations with confidence scoring.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/HallucinationApp" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/JackpotAnalytics.png" alt="JackpotAnalytics thumbnail" loading="lazy"><div class="card-head"><h3>JackpotAnalytics</h3><span class="tag">EDA • Probability</span></div><p>Frequency and randomness study of Powerball, Mega Millions, and Pick10.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/JackpotAnalytics" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/NetflixTrendsandAnalysis.png" alt="Netflix Trends thumbnail" loading="lazy"><div class="card-head"><h3>Netflix Trends & Analysis</h3><span class="tag">Analytics</span></div><p>Top 10 engagement patterns, the first-91-days effect, and runtime trends across formats.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/NetflixTrendsandAnalysis" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/PregnancyTrends2002-DataScience.png" alt="Pregnancy Trends thumbnail" loading="lazy"><div class="card-head"><h3>Pregnancy Trends 2002</h3><span class="tag">Public Health</span></div><p>NSFG-based outcomes and demographics analysis with ethical framing.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/PregnancyTrends2002-DataScience" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/TheCostOfCare.png" alt="The Cost of Care thumbnail" loading="lazy"><div class="card-head"><h3>The Cost of Care</h3><span class="tag">Healthcare • Policy</span></div><p>Medicare Part D pricing disparities: brand vs generic with policy recommendations.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/TheCostOfCare" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
         <article class="card"><img class="thumb" src="assets/project-thumbs/Racial-Disparities-in-Arrests-United-States-2020-data.png" alt="Arrests 2020 thumbnail" loading="lazy"><div class="card-head"><h3>Racial Disparities in Arrests — 2020</h3><span class="tag">Civic Data</span></div><p>OJJDP arrest data analysis, stereotype testing, and SARIMA projections.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Racial-Disparities-in-Arrests-United-States-2020-data" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/PrivacyPreservingFederatedHealthcareAI.png" alt="Privacy Preserving Federated Healthcare AI thumbnail" loading="lazy"><div class="card-head"><h3>Privacy Preserving Federated Healthcare AI</h3><span class="tag">Federated Learning • LoRA • Edge AI</span></div><p>Privacy-preserving healthcare AI framework using federated learning, differential privacy, LoRA fine-tuning, and edge computing.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Privacy-Preserving-Federated-Healthcare-AI" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/AIWebScrapingSemanticSearchRAG.png" alt="AI Web Scraping Semantic Search RAG thumbnail" loading="lazy"><div class="card-head"><h3>AI WebScraping Semantic Search RAG</h3><span class="tag">LLM • RAG • Semantic Search</span></div><p>AI pipeline integrating web scraping, semantic search, embeddings, and retrieval-augmented generation workflows.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/AI-WebScraping-SemanticSearch-RAG" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/CatsVsDogsDeepLearning.png" alt="Cats vs Dogs Deep Learning thumbnail" loading="lazy"><div class="card-head"><h3>Cats vs Dogs Deep Learning Classification</h3><span class="tag">CNN • Computer Vision</span></div><p>Deep learning image classifier distinguishing cats and dogs using convolutional neural networks and computer vision workflows.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Cats-vs-Dogs-Deep-Learning-Classification" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/AutoencodersGenerativeModels.png" alt="Autoencoders Generative Models thumbnail" loading="lazy"><div class="card-head"><h3>Autoencoders & Generative Models</h3><span class="tag">Deep Learning • Generative AI</span></div><p>Implementation of autoencoders and generative deep learning techniques for feature compression and representation learning.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Autoencoders-Generative-Models" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/NeuralNetworksAdvancedBackpropagation.png" alt="Neural Networks Advanced Backpropagation thumbnail" loading="lazy"><div class="card-head"><h3>Neural Networks & Advanced Backpropagation</h3><span class="tag">Deep Learning • Neural Networks</span></div><p>Advanced neural network architectures and backpropagation techniques for optimization and deep learning experimentation.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Neural-Networks-Advanced-Backpropagation" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/AutoencodersGenerativeDeepLearning.png" alt="Autoencoders Generative Deep Learning thumbnail" loading="lazy"><div class="card-head"><h3>Autoencoders Generative Deep Learning</h3><span class="tag">Generative AI • Deep Learning</span></div><p>Deep learning exploration of autoencoders, latent representations, and generative modeling architectures.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Autoencoders-Generative-Deep-Learning" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/DeepLearningRNNLSTM.png" alt="RNN LSTM thumbnail" loading="lazy"><div class="card-head"><h3>Deep Learning RNN LSTM Sequence Modeling</h3><span class="tag">RNN • LSTM • NLP</span></div><p>Sequence modeling using recurrent neural networks and LSTM architectures for temporal and text-based learning tasks.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/Deep-Learning-RNN-LSTM-Sequence-Modeling" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+        <article class="card"><img class="thumb" src="assets/project-thumbs/CNNTransferLearning.png" alt="CNN Transfer Learning thumbnail" loading="lazy"><div class="card-head"><h3>CNN Image Classification Transfer Learning</h3><span class="tag">CNN • Transfer Learning</span></div><p>Image classification using convolutional neural networks and transfer learning for efficient deep learning deployment.</p><div class="card-actions"><a class="btn sm" href="https://github.com/Dare215/CNN-Image-Classification-Transfer-Learning" target="_blank" rel="noopener">View on GitHub</a></div></article>
       </div>
     </section>
 
@@ -193,4 +207,6 @@
   <script src="js/main.js" defer></script>
 </body>
 </html>
+```
+
 
